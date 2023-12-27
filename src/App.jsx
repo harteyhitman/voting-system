@@ -1,4 +1,5 @@
 import './Global.scss'
+import './Mobile.scss'
 import Onboarding from './pages/Onboarding'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CastYourVote from './pages/CastYourVote';
@@ -9,6 +10,7 @@ import PhoneNoVerification from './authpages/PhoneNoVerification';
 import VerificationSuccess from './authpages/VerificationSuccess';
 import Admin from './authpages/adminAccount';
 import UserAccount from './authpages/UserAccount';
+import WelcomeBack from './authpages/WelcomeBack';
 
 const App = () => {
   return (
@@ -23,6 +25,7 @@ const App = () => {
       <Route exact path='/Login/PhoneNoVerification/VerificationSuccess' element={<VerificationSuccess />} />
       <Route exact path='/Login/Admin' element={<Admin />} />
       <Route exact path='/Login/Admin/UserAccount' element={<UserAccount />} />
+      <Route exact path='/Login/Admin/UserAccount/WelcomeBack' element={<WelcomeBack />} />
     </Routes>
     </BrowserRouter>
   )

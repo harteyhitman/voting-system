@@ -3,7 +3,7 @@ import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 
-const Login = () => {
+const WelcomeBack = () => {
 
   const [phoneNo, setphoneNo] = useState('');
   const navigate = useNavigate();
@@ -16,7 +16,8 @@ const Login = () => {
 
     const handleSubmitForm =(e)=>{
       e.preventDefault();
-      navigate("PhoneNoVerification");
+      navigate("/Login/PhoneNoVerification")
+
 
         }
 
@@ -27,8 +28,7 @@ const Login = () => {
 
         <div className="login-texts">
           <h4>Welcome Back ! </h4>
-          <p>Welcome to <span>Elect.NG</span>  Online Voting Platform, please <br />
-            log in to vote for your preferred candidates</p>
+          <p>Welcome to <span>Elect.NG</span> Online Voting Platform</p>
         </div>
         <div className="login">
           <div className="inputs">
@@ -56,14 +56,12 @@ const Login = () => {
 
         </div>
       </div>
-      <Button label="Login" />
-     <Link to="/Login/Admin"><p className="admin-sign-in">Sign in as an Admin</p></Link> 
+      <Button  label="Login" />
 <Link className="dont-have-account" to="/Login/Admin/UserAccount">
 Don’t have an account? <span>Create Account</span>
-
 </Link>
     </form>
   )
 }
 
-export default Login
+export default WelcomeBack

@@ -17,7 +17,7 @@ const PhoneNoVerification = () => {
             <h1>Elect.NG</h1>
             <div className="fone-num-ver">
                 <h4>Phone Number Verification</h4>
-                <p>We’ve sent a 6- digit OTP code to 09139*****1 <br />
+                <p>We've sent a 6- digit OTP code to 09139*****1 <br />
                     Please input the code here to verify your phone <br />
                     number.</p>
                     <div className="otp-inputs">
