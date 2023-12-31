@@ -11,6 +11,7 @@ import VerificationSuccess from './authpages/VerificationSuccess';
 import Admin from './authpages/adminAccount';
 import UserAccount from './authpages/UserAccount';
 import WelcomeBack from './authpages/WelcomeBack';
+import DashboardLayout from './components/DashboardComponent';
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
       <Route exact path='/Login/Admin' element={<Admin />} />
       <Route exact path='/Login/Admin/UserAccount' element={<UserAccount />} />
       <Route exact path='/Login/Admin/UserAccount/WelcomeBack' element={<WelcomeBack />} />
+      <Route exact path='/DashboardLayout' element={<DashboardLayout />} />
     </Routes>
     </BrowserRouter>
   )
