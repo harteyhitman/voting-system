@@ -2,7 +2,7 @@ import React from 'react'
 import ToggleMin from '../components/ToggleMin'
 import { useState } from "react";
 import Button from '../components/Button';
-import { Link, useNavigate } from 'react-router-dom';
+import { Link, } from 'react-router-dom';
 import VisibilityIcon from '@mui/icons-material/Visibility';
 import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
@@ -28,7 +28,6 @@ const Admin = () => {
 
     const handlesubmitUser = (e) => {
         e.preventDefault();
-        navigate('')
 
     }
 
