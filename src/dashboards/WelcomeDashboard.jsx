@@ -1,7 +1,6 @@
 import DashBoard from "../components/DashBoard"
 import Bell from '../assets/noti-bells.png'
 import Button from "../components/Button"
-import Magnifier from '../assets/magnifyingGlass.png'
 import { Link } from "react-router-dom"
 
 const WelcomeDashboard = () => {
