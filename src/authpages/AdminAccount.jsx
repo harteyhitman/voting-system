@@ -28,7 +28,6 @@ const Admin = () => {
 
     const handlesubmitUser = (e) => {
         e.preventDefault();
-
     }
 
 

@@ -8,7 +8,7 @@ import StayInfromed from './pages/StayInfromed';
 import Login from './authpages/Login';
 import PhoneNoVerification from './authpages/PhoneNoVerification';
 import VerificationSuccess from './authpages/VerificationSuccess';
-import Admin from './authpages/adminAccount';
+import Admin from './authpages/AdminAccount';
 import UserAccount from './authpages/UserAccount';
 import WelcomeBack from './authpages/WelcomeBack';
 import WelcomeDashboard from './dashboards/WelcomeDashboard';
