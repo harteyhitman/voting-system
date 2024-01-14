@@ -41,8 +41,11 @@ const UserAccount = () => {
 
             <form onSubmit={handlesubmitUser}>
                 <div className="data-container">
-                    <ToggleMin />
+                    <div className="flex-left-toggle">
+                        <ToggleMin />
                     <h2>Create Account </h2>
+                    </div>
+                    
                     <div className="forms">
                         <input type="text" placeholder='Full Name' required />
                         <input
