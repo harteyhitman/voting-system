@@ -1,0 +1,219 @@
+@media (max-width: 700px) {
+    img{
+        max-width: 100%;
+    }
+    .navbar-container{
+        display: none;
+    }
+
+    .ballot-cont{
+        margin-top: 10px;
+    }
+    .Home-screen {
+        background: url('../src/assets/welcome-background.png');
+        background-size: 30rem;
+        background-repeat: no-repeat;
+        background-position: calc(90deg);
+        width: 300.748px;
+        height: 231.407px;
+        // transform: rotate(90deg);
+    }
+    .cast-your-vote {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 30px 10px;
+    
+        .Skip {
+            position: relative;
+            right: -8em;
+            top: -14px;
+            p{
+                font-weight: bold;
+            }
+        }
+        button{
+            display: flex;
+width: 282px;
+height: 65px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+        
+        }
+
+    }
+.login-cont{
+    padding: 0px;
+ .login-page   input{
+        display: flex;
+width: 282px;
+height: 65px;
+padding: 10px;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+    }
+    .login-texts p {
+        color: #000;
+        font-family: "Inter";
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 24px;
+        letter-spacing: 0.024px;
+        width: 300px;
+}
+.login-texts h4 {
+    color: #000;
+    font-family: "Inter";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+}
+h1 {
+    color: #0CBB5C;
+    text-align: center;
+    font-family: "Lexend";
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 64px;
+}
+button{
+    display: flex;
+width: 300px;
+height: 65px;
+padding: 10px;
+justify-content: center;
+align-items: center;
+gap: 10px;
+flex-shrink: 0;
+}
+.login .remember-password {
+    display: flex;
+    gap: 10px; 
+    margin-top: 20px;
+}
+}
+.phone-verification h1 {
+    font-size: 40px;
+}
+.phone-verification .fone-num-ver .otp-inputs input{
+    display: flex;
+width: 300px;
+height: 65px;
+}
+.phone-verification .fone-num-ver p{
+    width: 300px;
+    font-size: 12px;
+    line-height: normal;
+}
+.phone-verification{
+    padding: 10px;
+    margin: 0px;
+}
+.ver-success{
+padding: 10px;
+margin: 0px;
+h1{
+    font-size: 40px;
+}
+h2{
+    font-size: 35px;
+}
+button{
+    width: 280px;
+}
+img {
+    border-radius: 200px;
+    background: rgba(12, 187, 92, 0.8);
+    padding: 20px;
+}
+}
+.admin-con{
+    margin: 0px;
+    padding: 10px; h1{
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+    button{
+        width: 300px;
+        margin: 30px 0px;
+    }
+    form .data-container .forms input{
+        width: 300px;
+    }
+    form .data-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+}
+}
+.admin-con form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.navbar-dashboard {
+    display: none;
+}
+.dashboard-main{
+    display: none;
+}
+.dash-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 100px;
+    text-align: center;
+    cursor: pointer;
+    button{
+        width: 300px;
+    }
+    .create-and-join-poll p{
+        width: 300px;
+        font-size: 12px;
+        line-height: normal;
+    }
+}
+.small-screen-welcome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0px;
+    color: #0CBB5C;
+text-align: center;
+font-family: 'Lexend';
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 20px; /* 50% */
+
+}
+.voting-web{
+display: flex;
+justify-content: space-between;
+align-items: center;
+color: #000;
+text-align: center;
+font-family: 'Inter';
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-top: 50px;
+margin-bottom: 20px;
+padding: 10px 20px;
+border-radius: 10px;
+background: #FFF;
+box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+}
