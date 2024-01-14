@@ -7,17 +7,14 @@
     }
 
     .ballot-cont{
-        margin-top: 10px;
-    }
-    .Home-screen {
         background: url('../src/assets/welcome-background.png');
-        background-size: 30rem;
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: calc(90deg);
-        width: 300.748px;
-        height: 231.407px;
-        // transform: rotate(90deg);
+        background-position: center;
+        height: 100vh;
+        max-width: 100%;
     }
+
     .cast-your-vote {
         display: flex;
         flex-direction: column;
