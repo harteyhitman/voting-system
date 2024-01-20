@@ -276,4 +276,66 @@ box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     font-weight: 600;
     line-height: 0px;
 }
+.left-dash h1{
+    display: none;
+}
+.create-poll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 40px 40px;
+    background: #FBFBFB;
+
+    gap: 0px;
+    #onevote{
+        width: 302px;
+height: 49px;
+flex-shrink: 0; 
+    }
+}
+.create-poll .right-dash .poll-inputs div input,.right-dash .headings{
+    width: 302px;
+    font-size: 16px;
+height: 49px;
+flex-shrink: 0;
+}
+
+.create-poll #date-cont {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 70px;
+    background: 255;
+}
+.create-poll #date-cont input {
+    width: 120px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #FFF;
+}
+.create-poll #date-cont label {
+    color: #000;
+    font-family: "Inter";
+    font-size: 16px;
+}
+.btn-create-poll{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 280px;
+    button{
+        display: flex;
+        width: 280px;
+flex-shrink: 0;
+    }
+}
+.create-poll .right-dash .headings h4{
+    font-size: 16px;
+    font-weight: bold;
+}
+.create-poll label{
+    font-size: 16px;
+}
 }

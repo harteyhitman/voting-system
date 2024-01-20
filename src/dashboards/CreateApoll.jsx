@@ -1,4 +1,4 @@
-import React from 'react'
+ import React from 'react'
 import DashBoard from '../components/DashBoard'
 import TimeAndDate from '../components/TimeAndDate'
 import { Polls, } from '../store'
@@ -18,11 +18,11 @@ const CreateApoll = () => {
                     <h4>Create A Poll</h4>
                     <p>Fill in the fields belows to create a poll</p>
                 </div>
-                <form className="poll-inputs">
+                <div className="poll-inputs">
                     {Polls.map((poll) =>(
                         <div key={poll.id}>
                             <label>{poll.label}</label>
-                            <input type="text" placeholder={poll.placeholder}/>              
+                            <input className='polls-inputs' type="text" placeholder={poll.placeholder}/>              
                         </div>
                             
                     ))}
@@ -30,12 +30,15 @@ const CreateApoll = () => {
                         <TimeAndDate />
                     </div>
                     
-                    <label>Voting Restrictions</label>
+                    <label>Voting Restrictions</label> <br />
                     <select name="onevote" id="onevote">
                         <option value="voteip">One vote per IP address</option>
                     </select>
-                    <Button label="Create A Poll" className=""/>
-                </form>
+                    <div className="btn-create-poll">
+                         <Button label="Create A Poll" className=""/>
+                    </div>
+                   
+                </div>
             </div>
         </div>
     )

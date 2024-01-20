@@ -3,8 +3,6 @@ import VoteIcon from '../assets/vote.png'
 import Statistcs from '../assets/statistics.png'
 import ProfileSetting from '../assets/profile-setting.png'
 import UploadSimple from '../assets/UploadSimple.png'
-import Calendar from '../assets/CalendarCheck.png'
-import Timer from '../assets/Timer.png'
 
 export const NavbarList =[
     {
@@ -66,29 +64,3 @@ export const Polls=[
     },
 ]
  
-export const TimeAndDateList = [
-    {
-        id: 1,
-        label: 'Start Date',
-        placeholder: 'dd /mm/yr',
-        icons: Calendar,
-    },
-    {
-        id: 2,
-        label: 'Time',
-        placeholder: '00:00',
-        icons: Timer,
-    },
-    {
-        id: 3,
-        label: 'End Date',
-        placeholder: 'dd /mm/yr',
-        icons: Calendar,
-    },
-    {
-        id: 4,
-        label: 'Time',
-        placeholder: '00:00',
-        icons: Timer,
-    },
-]
