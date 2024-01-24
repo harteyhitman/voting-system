@@ -1,24 +1,30 @@
 import Button from "../components/Button"
 import { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
+import VisibilityIcon from '@mui/icons-material/Visibility';
+import VisibilityOffIcon from '@mui/icons-material/VisibilityOff';
 
 
 const Login = () => {
 
   const [phoneNo, setphoneNo] = useState('');
+  const [password, setPassword] = useState('');
   const navigate = useNavigate();
+  const [showPassword, setShowPassword] = useState(false);
 
-
+  const togglePasswordVisibility = () => {
+    setShowPassword(!showPassword);
+  };
   const limitPhoneNumber = event => {
     const limit = 11;
-    setphoneNo(event.target.value.slice(0, limit));
-    };
+    setphoneNo(event.target.value.slice(0, limit,));
+  };
 
-    const handleSubmitForm =(e)=>{
-      e.preventDefault();
-      navigate("PhoneNoVerification");
+  const handleSubmitForm = (e) => {
+    e.preventDefault();
+    navigate("PhoneNoVerification");
 
-        }
+  }
 
   return (
     <form onSubmit={handleSubmitForm} className='login-cont'>
@@ -33,23 +39,35 @@ const Login = () => {
         <div className="login">
           <div className="inputs">
             <input
-            type="number"
-            value={phoneNo}
-            onChange={limitPhoneNumber}
-             placeholder='Phone number' 
-             pattern="\d{3}-\d{3}-\d{4}"
-             required
-             />
-             
-            <input
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
-            type="password" placeholder='password' 
-            title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required
+              type='number'
+              id='phone'
+              name='phone'
+
+              value={phoneNo}
+              onChange={limitPhoneNumber}
+              placeholder='Phone number'
+              required
             />
+
+            <div style={{ position: 'relative' }}>
+              <input
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                type={showPassword ? 'text' : 'password'}
+                value={password}
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <i
+                style={{  }}
+                onClick={togglePasswordVisibility}
+                className="eye-icon"
+              >
+                {showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
+              </i>
+            </div>
           </div>
 
           <div className="remember-password">
-            <input className="checkbox" type="checkbox" required/>
+            <input className="checkbox" type="checkbox" required />
             <span>Remember Password</span>
             <span>Forgot Password?</span>
           </div>
@@ -57,11 +75,11 @@ const Login = () => {
         </div>
       </div>
       <Button label="Login" />
-     <Link to="/Login/Admin"><p className="admin-sign-in">Sign in as an Admin</p></Link> 
-<Link className="dont-have-account" to="/Login/Admin/UserAccount">
-Don’t have an account? <span>Create Account</span>
+      <Link to="/Login/Admin"><p className="admin-sign-in">Sign in as an Admin</p></Link>
+      <Link className="dont-have-account" to="/Login/Admin/UserAccount">
+        Don’t have an account? <span>Create Account</span>
 
-</Link>
+      </Link>
     </form>
   )
 }

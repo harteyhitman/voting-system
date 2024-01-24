@@ -13,6 +13,7 @@ import UserAccount from './authpages/UserAccount';
 import WelcomeBack from './authpages/WelcomeBack';
 import WelcomeDashboard from './dashboards/WelcomeDashboard';
 import CreateApoll from './dashboards/CreateApoll';
+import SuccessPollCreated from './dashboards/SuccessPollCreated';
 
 const App = () => {
   return (
@@ -30,6 +31,7 @@ const App = () => {
       <Route exact path='/Login/Admin/UserAccount/WelcomeBack' element={<WelcomeBack />} />
       <Route exact path='/Login/PhoneNoVerification/VerificationSuccess/WelcomeDashboard' element={<WelcomeDashboard />} />
       <Route exact path='/Login/PhoneNoVerification/VerificationSuccess/WelcomeDashboard/CreateApoll' element={<CreateApoll />} />
+      <Route exact path='/Login/PhoneNoVerification/VerificationSuccess/WelcomeDashboard/CreateApoll/SuccessPollCreated' element={<SuccessPollCreated />} />
     </Routes>
     </BrowserRouter>
   )

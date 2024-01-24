@@ -3,6 +3,7 @@ import DashBoard from '../components/DashBoard'
 import TimeAndDate from '../components/TimeAndDate'
 import { Polls, } from '../store'
 import Button from '../components/Button'
+import { Link } from 'react-router-dom'
 
 const CreateApoll = () => {
     return (
@@ -22,7 +23,7 @@ const CreateApoll = () => {
                     {Polls.map((poll) =>(
                         <div key={poll.id}>
                             <label>{poll.label}</label>
-                            <input className='polls-inputs' type="text" placeholder={poll.placeholder}/>              
+                            <input className='polls-inputs' type="text" placeholder={poll.placeholder} required/>              
                         </div>
                             
                     ))}
@@ -34,9 +35,9 @@ const CreateApoll = () => {
                     <select name="onevote" id="onevote">
                         <option value="voteip">One vote per IP address</option>
                     </select>
-                    <div className="btn-create-poll">
+                    <Link to='/Login/PhoneNoVerification/VerificationSuccess/WelcomeDashboard/CreateApoll/SuccessPollCreated' className="btn-create-poll">
                          <Button label="Create A Poll" className=""/>
-                    </div>
+                    </Link>
                    
                 </div>
             </div>
