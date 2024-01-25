@@ -1011,7 +1011,7 @@ button {
     background: #0CBB5C;
     color: #FFF;
     text-align: center;
-    font-family: Inter;
+    font-family: 'Inter';
     font-size: 14px;
     font-style: normal;
     font-weight: 500;
@@ -1209,12 +1209,9 @@ letter-spacing: 0.056px;
 
     }
     button{
-        display: flex;
 width: 342px;
 height: 65px;
 padding: 10px;
-justify-content: center;
-align-items: center;
 gap: 10px;
 flex-shrink: 0;
 border-radius: 10px;

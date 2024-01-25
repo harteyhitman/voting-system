@@ -1,15 +1,17 @@
 @media (max-width: 700px) {
-    body{
+    body {
         text-align: center;
     }
-    img{
+
+    img {
         max-width: 100%;
     }
-    .navbar-container{
+
+    .navbar-container {
         display: none;
     }
 
-    .ballot-cont{
+    .ballot-cont {
         margin-top: 10px;
     }
 
@@ -19,332 +21,405 @@
         justify-content: center;
         align-items: center;
         padding: 30px 10px;
-    
+
         .Skip {
             position: relative;
             right: -8em;
             top: -14px;
-            p{
+
+            p {
                 font-weight: bold;
             }
         }
-        button{
+
+        button {
             display: flex;
-width: 282px;
-height: 65px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-        
+            width: 282px;
+            height: 65px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+
         }
 
     }
-.login-cont{
-    padding: 0px;
- .login-page   input{
-        display: flex;
-width: 282px;
-height: 65px;
-padding: 10px;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
+
+    .login-cont {
+        padding: 0px;
+
+        .login-page input {
+            display: flex;
+            width: 282px;
+            height: 65px;
+            padding: 10px;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .login-texts p {
+            color: #000;
+            font-family: "Inter";
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 24px;
+            letter-spacing: 0.024px;
+            width: 300px;
+        }
+
+        .login-texts h4 {
+            color: #000;
+            font-family: "Inter";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 40px;
+        }
+
+        h1 {
+            color: #0CBB5C;
+            text-align: center;
+            font-family: "Lexend";
+            font-size: 44px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 64px;
+        }
+
+        button {
+            display: flex;
+            width: 300px;
+            height: 65px;
+            padding: 10px;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-shrink: 0;
+        }
+
+        .login .remember-password {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+        }
     }
-    .login-texts p {
-        color: #000;
-        font-family: "Inter";
-        font-size: 12px;
-        font-style: normal;
-        font-weight: 300;
-        line-height: 24px;
-        letter-spacing: 0.024px;
-        width: 300px;
-}
-.login-texts h4 {
-    color: #000;
-    font-family: "Inter";
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 40px;
-}
-h1 {
-    color: #0CBB5C;
-    text-align: center;
-    font-family: "Lexend";
-    font-size: 44px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 64px;
-}
-button{
-    display: flex;
-width: 300px;
-height: 65px;
-padding: 10px;
-justify-content: center;
-align-items: center;
-gap: 10px;
-flex-shrink: 0;
-}
-.login .remember-password {
-    display: flex;
-    gap: 10px; 
-    margin-top: 20px;
-}
-}
-.phone-verification h1 {
-    font-size: 40px;
-}
-.phone-verification .fone-num-ver .otp-inputs input{
-    display: flex;
-width: 300px;
-height: 65px;
-}
-.phone-verification .fone-num-ver p{
-    width: 300px;
-    font-size: 12px;
-    line-height: normal;
-}
-.phone-verification{
-    padding: 10px;
-    margin: 0px;
-}
-.ver-success{
-padding: 10px;
-margin: 0px;
-h1{
-    font-size: 40px;
-}
-h2{
-    font-size: 35px;
-}
-button{
-    width: 280px;
-}
-img {
-    border-radius: 200px;
-    background: rgba(12, 187, 92, 0.8);
-    padding: 20px;
-}
-}
-.admin-con{
-    margin: 0px;
-    padding: 10px; h1{
+
+    .phone-verification h1 {
         font-size: 40px;
-        margin-bottom: 30px;
     }
-.flex-left-toggle{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin: 0;
-    align-self: flex-start;
-}
-    button{
+
+    .phone-verification .fone-num-ver .otp-inputs input {
+        display: flex;
         width: 300px;
-        margin: 30px 0px;
+        height: 65px;
     }
-    form .data-container .forms input{
+
+    .phone-verification .fone-num-ver p {
         width: 300px;
+        font-size: 12px;
+        line-height: normal;
     }
-    form .data-container {
+
+    .phone-verification {
+        padding: 10px;
+        margin: 0px;
+    }
+
+    .ver-success {
+        padding: 10px;
+        margin: 0px;
+
+        h1 {
+            font-size: 40px;
+        }
+
+        h2 {
+            font-size: 35px;
+        }
+
+        button {
+            width: 280px;
+        }
+
+        img {
+            border-radius: 200px;
+            background: rgba(12, 187, 92, 0.8);
+            padding: 20px;
+        }
+    }
+
+    .admin-con {
+        margin: 0px;
+        padding: 10px;
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 30px;
+        }
+
+        .flex-left-toggle {
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0;
+            align-self: flex-start;
+        }
+
+        button {
+            width: 300px;
+            margin: 30px 0px;
+        }
+
+        form .data-container .forms input {
+            width: 300px;
+        }
+
+        form .data-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .admin-con form {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-}
-}
-.admin-con form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.navbar-dashboard {
-    display: none;
-}
-.dashboard-main{
-    display: none;
-}
-.dash-container {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    gap: 100px;
-    text-align: center;
-    cursor: pointer;
-    button{
-        width: 300px;
     }
-    .create-and-join-poll p{
-        width: 300px;
-        font-size: 12px;
-        line-height: normal;
+
+    .navbar-dashboard {
+        display: none;
     }
-}
-.small-screen-welcome{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 0px;
-    color: #0CBB5C;
-text-align: center;
-font-family: 'Lexend';
-font-size: 40px;
-font-style: normal;
-font-weight: 600;
-line-height: 20px; /* 50% */
 
-}
-.voting-web{
-display: flex;
-justify-content: space-between;
-align-items: center;
-color: #000;
-text-align: center;
-font-family: 'Inter';
-font-size: 15px;
-font-style: normal;
-font-weight: 500;
-line-height: normal;
-margin-top: 50px;
-margin-bottom: 20px;
-padding: 10px 20px;
-border-radius: 10px;
-background: #FFF;
-box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-}
+    .dashboard-main {
+        display: none;
+    }
 
-.toggle-min {
-    display: flex;
-    // width: 250px;
-    height: 55px;
-    padding: 8px;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    // gap: 10px;
-    flex-shrink: 0;
-    border-radius: 20px;
-    border: 1px solid #0CBB5C;
-    background: #FFF;
+    .dash-container {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 100px;
+        text-align: center;
+        cursor: pointer;
 
-    :first-child {
+        button {
+            width: 300px;
+        }
+
+        .create-and-join-poll p {
+            width: 300px;
+            font-size: 12px;
+            line-height: normal;
+        }
+    }
+
+    .small-screen-welcome {
         display: flex;
         justify-content: center;
         align-items: center;
+        margin: 40px 0px;
         color: #0CBB5C;
         text-align: center;
+        font-family: 'Lexend';
+        font-size: 40px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 20px;
+        /* 50% */
+
+    }
+
+    .voting-web {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: #000;
+        text-align: center;
         font-family: 'Inter';
-        font-size: 12px;
+        font-size: 15px;
         font-style: normal;
         font-weight: 500;
         line-height: normal;
-        border: 1px solid #0CBB5C;
-        border-radius: 50px;
-        width: 100px;
-        height: 30px;
+        margin-top: 50px;
+        margin-bottom: 20px;
+        padding: 10px 20px;
+        border-radius: 10px;
+        background: #FFF;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     }
 
-    :last-child {
+    .toggle-min {
         display: flex;
+        // width: 250px;
+        height: 55px;
+        padding: 8px;
         justify-content: center;
         align-items: center;
-        color: #0CBB5C;
-        text-align: center;
-        font-family: 'Inter';
-        font-size: 14px;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
+        margin-bottom: 20px;
+        // gap: 10px;
+        flex-shrink: 0;
+        border-radius: 20px;
         border: 1px solid #0CBB5C;
-        border-radius: 50px;
-        width: 100px;
-        height: 30px;
-        transition: ease-in-out;
-    }
-}
-.admin-con form .data-container h2 {
-    margin-bottom: 50px;
-    color: #000;
-    text-align: center;
-    font-family: "Inter";
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 0px;
-}
-.left-dash h1{
-    display: none;
-}
-.create-poll{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 40px 40px;
-    background: #FBFBFB;
+        background: #FFF;
 
-    gap: 0px;
-    #onevote{
+        :first-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #0CBB5C;
+            text-align: center;
+            font-family: 'Inter';
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border: 1px solid #0CBB5C;
+            border-radius: 50px;
+            width: 100px;
+            height: 30px;
+        }
+
+        :last-child {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #0CBB5C;
+            text-align: center;
+            font-family: 'Inter';
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+            border: 1px solid #0CBB5C;
+            border-radius: 50px;
+            width: 100px;
+            height: 30px;
+            transition: ease-in-out;
+        }
+    }
+
+    .admin-con form .data-container h2 {
+        margin-bottom: 50px;
+        color: #000;
+        text-align: center;
+        font-family: "Inter";
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 0px;
+    }
+
+    .left-dash h1 {
+        display: none;
+    }
+
+    .create-poll {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 40px 40px;
+
+
+        gap: 0px;
+
+        #onevote {
+            width: 302px;
+            height: 49px;
+            flex-shrink: 0;
+        }
+    }
+
+    .create-poll .right-dash .poll-inputs div input,
+    .right-dash .headings {
         width: 302px;
-height: 49px;
-flex-shrink: 0; 
+        font-size: 16px;
+        height: 49px;
+        flex-shrink: 0;
     }
-}
-.create-poll .right-dash .poll-inputs div input,.right-dash .headings{
-    width: 302px;
-    font-size: 16px;
-height: 49px;
-flex-shrink: 0;
-}
 
-.create-poll #date-cont {
-    display: grid;
-    grid-template-columns: auto auto;
-    column-gap: 70px;
-    background: 255;
-}
-.create-poll #date-cont input {
-    width: 120px;
-    height: 40px;
-    flex-shrink: 0;
-    border-radius: 10px;
-    background: #FFF;
-}
-.create-poll #date-cont label {
-    color: #000;
-    font-family: "Inter";
-    font-size: 16px;
-}
-.btn-create-poll{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 280px;
-    button{
+    .btn-create-poll {
         display: flex;
-        width: 280px;
-flex-shrink: 0;
+        justify-content: center;
+        align-items: center;
+
+        button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .btn-con {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
-}
-.create-poll .right-dash .headings h4{
-    font-size: 16px;
-    font-weight: bold;
-}
-.create-poll label{
-    font-size: 16px;
-}
-.eye-icon{
-    position: absolute;
-    right: 25px ;
-    top: 20px;
-    cursor: pointer;
-  }
+
+    .create-poll #date-cont {
+        display: grid;
+        grid-template-columns: auto auto;
+        column-gap: 70px;
+        background: 255;
+    }
+
+    .create-poll #date-cont input {
+        width: 120px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 10px;
+        background: #FFF;
+    }
+
+    .create-poll #date-cont label {
+        color: #000;
+        font-family: "Inter";
+        font-size: 16px;
+    }
+
+    .btn-create-poll {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 280px;
+
+        button {
+            display: flex;
+            width: 280px;
+            flex-shrink: 0;
+        }
+    }
+
+    .create-poll .right-dash .headings h4 {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    .create-poll label {
+        font-size: 16px;
+    }
+
+    .eye-icon {
+        position: absolute;
+        right: 25px;
+        top: 20px;
+        cursor: pointer;
+    }
+
+    .success-poll-created {
+        display: flex;
+        gap: 0px;
+    }
+    .sucess-dashboard{
+        display: none;
+    }
 }

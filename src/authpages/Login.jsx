@@ -12,6 +12,7 @@ const Login = () => {
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
 
+
   const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
   };
@@ -42,7 +43,7 @@ const Login = () => {
               type='number'
               id='phone'
               name='phone'
-
+              pattern={String.raw`\(\d{3}\\) \d{3}-\d{4}`}
               value={phoneNo}
               onChange={limitPhoneNumber}
               placeholder='Phone number'

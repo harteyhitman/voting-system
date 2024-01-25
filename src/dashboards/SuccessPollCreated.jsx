@@ -16,9 +16,9 @@ const SuccessPollCreated = () => {
                 <img src={SuccessImg} alt="" />
                 <h2>Poll Created Successfully</h2>
               
-                <Link to="/Login/PhoneNoVerification/VerificationSuccess/WelcomeDashboard">
+                <Link 
+                to="/Login/PhoneNoVerification/VerificationSuccess/WelcomeDashboard">
                     <Button label="Done" />
-
                 </Link>
             </div>
         </div>
