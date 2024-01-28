@@ -17,6 +17,14 @@
         height: 90vh;
     }
 
+    .Home-screen {
+        background: url(./assets/small_background_img.png);
+        background-size: cover;
+        background-repeat: repeat;
+        background-position: center;
+        width: 100%;
+        margin: 0 auto;
+    }
     .cast-your-vote {
         display: flex;
         flex-direction: column;
