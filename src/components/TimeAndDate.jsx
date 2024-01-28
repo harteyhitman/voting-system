@@ -14,7 +14,7 @@ const TimeAndDate = () => {
 
 
   return (
-    <form onSubmit={handleSubmit} id="date-cont">
+    <div onSubmit={handleSubmit} id="date-cont">
       <div className="time-date">
         <label>Start Date</label>
         <input type="date"
@@ -40,7 +40,7 @@ const TimeAndDate = () => {
           value={inputValue}
           onChange={handleInputChange}/>
       </div>
-    </form>
+    </div>
   )
 }
 

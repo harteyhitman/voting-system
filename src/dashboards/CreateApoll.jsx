@@ -3,13 +3,13 @@ import DashBoard from '../components/DashBoard'
 import TimeAndDate from '../components/TimeAndDate'
 import { Polls, } from '../store'
 import Button from '../components/Button'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import { useState } from 'react'
 
 const CreateApoll = () => {
     const [isFormValid, setIsFormValid] = useState(false);
+    const navigate = useNavigate();
 
-    // Handler to check form validity
     const checkFormValidity = () => {
       const inputs = document.querySelectorAll(true);
       let isValid = true;
@@ -21,8 +21,14 @@ const CreateApoll = () => {
       });
       setIsFormValid(isValid);
     }
+    const createPollNow = (e)=>{
+        navigate('/Login/PhoneNoVerification/VerificationSuccess/WelcomeDashboard/CreateApoll/SuccessPollCreated');
+        e.preventDefault();
+    
+      }
+
     return (
-        <div className='create-poll'>
+        <form  onSubmit={createPollNow} className='create-poll'>
             <div className="left-dash">
                 <h1>Elect.NG</h1>
                 <div className="dashboard">
@@ -55,14 +61,17 @@ const CreateApoll = () => {
                     <select name="onevote" id="onevote">
                         <option value="voteip">One vote per IP address</option>
                     </select>
-                    <Link to='/Login/PhoneNoVerification/VerificationSuccess/WelcomeDashboard/CreateApoll/SuccessPollCreated' 
-                    className={`btn-create-poll ${isFormValid ? '' : 'disabled'}`}>
-                         <Button label="Create A Poll" disabled={!isFormValid}/>
-                    </Link>
+                 
+                         <Button label="Create A Poll" 
+                         disabled={!isFormValid}
+                         className={`btn-create-poll 
+                         ${isFormValid ? '' : 'disabled'}`}
+                         />
+                   
                    
                 </div>
             </div>
-        </div>
+        </form>
     )
 }
 

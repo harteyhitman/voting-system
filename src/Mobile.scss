@@ -1,13 +1,14 @@
 @media (max-width: 700px) {
     body {
         text-align: center;
+      
     }
-
+  
     img {
         max-width: 100%;
     }
-
-    .navbar-container {
+    
+.navbar-container {
         display: none;
     }
 
@@ -385,25 +386,24 @@
         font-size: 16px;
     }
 
-    .btn-create-poll {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 280px;
 
-        button {
-            display: flex;
-            width: 280px;
-            flex-shrink: 0;
-        }
+    .btn-create-poll{
+        width: 262px;
     }
+.poll-inputs{
+    text-align: start;
+}
 
     .create-poll .right-dash .headings h4 {
+        text-align: start;
         font-size: 16px;
         font-weight: bold;
     }
 
+    .create-poll .right-dash .headings p{
+        font-size: 14px;
+        text-align: start;
+    }
     .create-poll label {
         font-size: 16px;
     }
