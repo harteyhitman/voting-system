@@ -20,7 +20,7 @@ const VoteCount = () => {
                 <div className='next-line'></div>
             </div>
             <Link to="/CastYourVote/VoteCount/StayInfromed">
-         <Button label="Next"/>
+         <Button label="Next" className="hover-all"/>
         </Link>   
         </div>)
 }

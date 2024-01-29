@@ -19,8 +19,8 @@ const StayInfromed = () => {
         <div className='next-line'></div>
       </div>
       <div className="ballot-btn">
-        <Link to="/Login"><Button label="Register as a voter" className="login-btn-ballot" /></Link>
-        <Link to="/Login"><Button label="Register as an admin" className="register-btn-ballot" /></Link>
+        <Link to="/Login"><Button label="Register as a voter" className="login-btn-ballot hover-all" /></Link>
+        <Link to="/Login"><Button label="Register as an admin" className="register-btn-ballot hover-all" /></Link>
       </div>
     </div>)
 }

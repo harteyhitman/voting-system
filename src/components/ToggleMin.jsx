@@ -1,36 +1,28 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
 const ToggleMin = () => {
-  const [activeLink, setActiveLink] = useState("");
+  const [activeLink, setActiveLink] = useState(null);
 
   const handleLinkClick = (link) => {
     setActiveLink(link);
   };
+  const navigate = useNavigate();
+
 
   return (
-    <div className="toggle-min">
-    <Link
-      to="/Login/Admin"
-      onClick={() => handleLinkClick("/Login/Admin")}
-      style={{
-        color: "white",
-        background: activeLink === "/Login/Admin" ? "#0CBB5C" : " ",
-      }}
-    >
-      <div>Admin</div>
-    </Link>
-    <Link
-      to="/Login/Admin/UserAccount"
-      onClick={() => handleLinkClick("/Login/Admin/UserAccount")}
-      style={{
-        color: "white",
-        background: activeLink === "/Login/Admin/UserAccount" ? "#0CBB5C" : " ",
-      }}
-    >
-      <div>User</div>
-    </Link>
-  </div>
+    <div className="toggle-min" >
+      <div onClick={() => handleLinkClick("/Login/Admin")}
+        style={{
+          background: activeLink === "/Login/Admin" ? "#0CBB5C" : "",
+          color: activeLink === "/Login/Admin" ? "#FFFFFF" : "",}} className="user">User </div>
+
+
+      <div onClick={() => handleLinkClick("/Login/Admin/UserAccount")}
+        style={{
+          background: activeLink === "/Login/Admin/UserAccount" ? "#0CBB5C" : "",
+          color: activeLink === "/Login/Admin" ? "#FFFFFF" : "",}} className="admin">Admin</div>
+
+    </div>
   );
 };
 

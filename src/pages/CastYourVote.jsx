@@ -22,7 +22,7 @@ const CastYourVote = () => {
                 <div className='next-line'></div>
             </div>
         <Link to="/CastYourVote/VoteCount">
-         <Button label="Next"/>
+         <Button label="Next" className="hover-all"/>
         </Link>   
         </div>
     )

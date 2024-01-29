@@ -62,7 +62,7 @@ const Admin = () => {
                                 onChange={(e) => setPassword(e.target.value)}
                             />
                             <i
-                                style={{ position: 'absolute', right: '10px', top: '10px', cursor: 'pointer' }}
+                                style={{ position: 'absolute', right: '10px', top: '20px', cursor: 'pointer' }}
                                 onClick={togglePasswordVisibility}
                             >
                                 {showPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}
@@ -75,7 +75,7 @@ const Admin = () => {
                                 onChange={(e) => setConfirmPassword(e.target.value)}
                             />
                             <i
-                                style={{ position: 'absolute', right: '10px', top: '10px', cursor: 'pointer' }}
+                                style={{ position: 'absolute', right: '10px', top: '20px', cursor: 'pointer' }}
                                 onClick={toggleConfirmPasswordVisibility}
                             >
                                 {showConfirmPassword ? <VisibilityIcon /> : <VisibilityOffIcon />}

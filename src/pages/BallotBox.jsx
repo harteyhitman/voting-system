@@ -14,8 +14,8 @@ const BallotBox = () => {
         <img src={Ballotbox} alt="" />
       </div>
       <div className="ballot-btn">
-        <Link to="/CastYourVote"><Button label="Register as a voter" className="login-btn-ballot" /></Link>
-        <Link to="/CastYourVote"><Button label="Register as an admin" className="register-btn-ballot" /></Link>
+        <Link to="/CastYourVote"><Button label="Register as a voter" className="login-btn-ballot hover-all" /></Link>
+        <Link to="/CastYourVote"><Button label="Register as an admin" className="register-btn-ballot hover-all" /></Link>
       </div>
     </div>
   );
