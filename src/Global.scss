@@ -11,7 +11,7 @@ a {
     text-decoration: none;
     list-style: none;
 }
-
+input{color: #455A64;}
 .Home-screen {
     background: url('../src/assets/welcome-background.png');
     background-size: cover;
@@ -772,6 +772,7 @@ button:active {
                     border: 2px solid #0CBB5C;
                     outline: none;
                     background: #FFF;
+                    color: #455A64;
                 }
             }
         }
@@ -844,7 +845,7 @@ button:active {
     border-radius: 20px;
     border: 1px solid #0CBB5C;
     background: #FFF;
-    .admin {
+    .admin{
         display: flex;
         justify-content: center;
         align-items: center;
@@ -852,16 +853,18 @@ button:active {
         font-family: "Inter";
         font-size: 14px;
         font-style: normal;
-        color: #0CBB5C;
         font-weight: 500;
         line-height: normal;
+        color: #0CBB5C;
         border: 1px solid #0CBB5C;
         border-radius: 50px;
         width: 100px;
         height: 30px;
         transition: ease-in-out;
+        cursor: pointer;
+ 
+     
 }
-
 .user {
     display: flex;
     justify-content: center;
@@ -881,6 +884,7 @@ button:active {
     position: relative;
     right: -15px;
     cursor: pointer;
+
 }
 
 }
