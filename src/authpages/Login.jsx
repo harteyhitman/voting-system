@@ -54,6 +54,7 @@ const Login = () => {
               <input
                 pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
                 type={showPassword ? 'text' : 'password'}
+                placeholder="number,uppercase and a special character, atleast 8 passwords"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />

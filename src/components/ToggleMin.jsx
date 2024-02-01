@@ -22,6 +22,7 @@ const ToggleMin = () => {
     <div className="toggle-min" >
       
  <div
+ 
         onClick={() => 
           handleLinkClick("/Login/Admin")
        }
@@ -29,6 +30,8 @@ const ToggleMin = () => {
         className="user"
       >
         User
+     
+        
       </div>
       <div
         onClick={() => 
@@ -38,6 +41,8 @@ const ToggleMin = () => {
         className="admin"
       >
         Admin
+       
+        
       </div>
     </div>
   );

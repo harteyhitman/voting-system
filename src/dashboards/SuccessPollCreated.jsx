@@ -8,7 +8,7 @@ import Button from '../components/Button'
 const SuccessPollCreated = () => {
     return (
         <div className='success-poll-created'>
-            <div className="sucess-dashboard">
+            <div className="dashboard sucess-dashboard">
                 <h1>Elect.NG</h1>
                 <DashBoard />
             </div>

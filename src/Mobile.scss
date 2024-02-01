@@ -20,6 +20,9 @@
         background-color: #0CBB5C;
         color: #fff;
 }
+.dashboard{
+    display: none;
+}
     .Home-screen {
         background: url(./assets/small_background_img.png);
         background-size: cover;
@@ -227,15 +230,15 @@
         button {
             width: 300px;
         }
-
         .create-and-join-poll p {
             width: 300px;
             font-size: 12px;
             line-height: normal;
+            margin-bottom: 12px;
         }
     }
 
-    .small-screen-welcome {
+    h2.small-screen-welcome {
         display: flex;
         justify-content: center;
         align-items: center;
@@ -427,12 +430,32 @@
         top: 20px;
         cursor: pointer;
     }
-
+.create-and-join-poll{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    gap: 30px;
+}
+.btn-dash-board {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
     .success-poll-created {
         display: flex;
         gap: 0px;
     }
-    .sucess-dashboard{
+    .sucess-dashboard, .dashboard-create-poll-new{
         display: none;
+    }
+    .dash-con{
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        margin: 30px auto;
     }
 }

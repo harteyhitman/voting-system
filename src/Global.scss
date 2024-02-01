@@ -895,14 +895,14 @@ button:active {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 30px;
+    // padding: 20px;
 
 
     h2 {
         color: #0CBB5C;
         text-align: center;
         font-family: 'Lexend';
-        font-size: 45px;
+        font-size: 40px;
         font-style: normal;
         font-weight: 600;
         line-height: 44px;
@@ -910,11 +910,11 @@ button:active {
     }
 
     input {
-        width: 653px;
-        height: 24px;
+        width: 603px;
+        // height: 10px;
         flex-shrink: 0;
         border-radius: 30px;
-        padding: 40px;
+        padding: 20px;
         border: 1px solid #92E3A9;
         background: #FFF;
         outline: none;
@@ -930,7 +930,6 @@ button:active {
             letter-spacing: 0.035px;
         }
     }
-
     .notification {
         display: flex;
         justify-content: center;
@@ -960,38 +959,54 @@ button:active {
         }
     }
 }
-
 .dash-container {
-    display: flex;
-    justify-content: baseline;
-    gap: 100px;
-    cursor: pointer;
-
-
+   display: flex;
+   justify-content: flex-start;
+   gap: 12em;
+   width: 100%;
+   margin: 0 auto;
 }
-
+.dashboard{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+   h2{
+    color: #0CBB5C;
+text-align: center;
+font-family: Lexend;
+font-size: 40px;
+font-style: normal;
+font-weight: 600;
+line-height: 44px; /* 97.778% */
+// margin-bottom: 30px;
+   }
+}
 .dashboard-main {
-    width: 260px;
-    height: 450px;
-    margin-bottom: 40px;
+    width: 250px;
+    // height: 650px;
+    // margin-bottom: 0px;
     flex-shrink: 0;
     border-radius: 0px 30px 0px 0px;
     background: #FFF;
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-    margin-left: 8px;
+    margin-left: 15px;
 
     .list-dash-con {
         display: flex;
         flex-direction: column;
-        gap: 50px;
+        gap: 30px;
         padding-top: 60px;
         margin-left: 12px;
-
+    
         a {
             text-decoration: none;
             color: #000;
             justify-content: flex-start;
-
+            &:active{
+                background-color:#14AE5C;
+                color: white;
+            }
+      
         }
 
         div {
@@ -999,27 +1014,56 @@ button:active {
             gap: 30px;
             text-align: start;
             align-items: center;
+            // width: 200px;
+            height: 45px;
 
+            &:active{
+                background-color: #D8FCE8;
+                color: white;
+                text-decoration: #FBFBFB;
+            }
+            :hover{
+                background-color: #0CBB5C;
+                color: white;
+            }
         }
     }
 
     .logout-cont {
         display: flex;
-        align-items: center;
-        gap: 30px;
-        margin-top: 80px;
-        margin-left: 10px;
-        margin-bottom: 20px;
+            gap: 30px;
+            text-align: start;
+            align-items: center;
+            height: 45px;
+            cursor: pointer;
+            margin-top: 60px;
+
+            &:active{
+                background-color: #D8FCE8;
+                color: white;
+                text-decoration: #FBFBFB;
+            }
+            :hover{
+                background-color: #0CBB5C;
+                color: white;
+            }
     }
+}
+.dash-con{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
 }
 
 .create-and-join-poll {
-    display: flex;
-    flex-direction: column;
-    // justify-content: center;
+ display: flex;
+ flex-direction: column;
+ justify-content: flex-start;
+ align-items: flex-start;
+ gap: 30px;
 
     p {
-        width: 612px;
+        // width: 612px;
         color: rgba(0, 0, 0, 0.81);
         font-family: 'Inter';
         font-size: 16px;
@@ -1027,7 +1071,7 @@ button:active {
         font-weight: 400;
         line-height: 24px;
         letter-spacing: 0.024px;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
 
         span {
             color: #0CBB5C;
@@ -1101,20 +1145,22 @@ button:active {
     display: none;
 }
 
-.create-poll {
+form.create-poll {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 100px;
     background-color: #FBFBFB;
-    gap: 150px;
+    position: relative;
 
-    .left-dash {
-        display: flex;
+    .dashboard-create-poll-new{
+        display: block;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        position: relative;
-        top: -120px;
+        position: fixed;
+        left: 5px;
+        top: 5px;
 
         h1 {
             color: #0CBB5C;
@@ -1123,76 +1169,68 @@ button:active {
             font-size: 45px;
             font-style: normal;
             font-weight: 600;
-            // line-height: 44px;
-            // margin-bottom: 40px;
-            /* 97.778% */
         }
     }
 
-    .right-dash {
-        .headings {
+    .right-dash{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        right: -30rem;
+
+        .headings{
             display: flex;
-            flex-direction: column;
-            margin-bottom: 30px;
-
-            h4 {
-                color: #000;
-                font-family: 'Inter';
-                font-size: 24px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 40px;
-                /* 166.667% */
-            }
-
-            p {
+            flex-direction: column; p{
                 color: rgba(0, 0, 0, 0.60);
-                font-family: 'Inter';
-                font-size: 16px;
-                font-style: normal;
-                font-weight: 500;
-                line-height: 24px;
-                /* 150% */
-                letter-spacing: 0.08px;
-            }
-
-        }
-
-        .poll-inputs {
-            div {
-                display: flex;
-                flex-direction: column;
-
-                label {
-                    color: #000;
-                    font-family: Inter;
-                    font-size: 16px;
-                    font-style: normal;
-                    font-weight: bold;
-                    line-height: 36px;
-                    /* 163.636% */
-                }
-
-                input {
-                    width: 521px;
-                    flex-shrink: 0;
-                    border-radius: 10px;
-                    background: #FFF;
-                    outline: none;
-                    border: none;
-                    padding: 15px 15px;
-                    color: rgba(0, 0, 0, 0.26);
-                    font-family: 'Inter';
-                    font-size: 12px;
-                    font-style: normal;
-                    font-weight: 500;
-                    line-height: 16px;
-                    /* 114.286% */
-                    letter-spacing: 0.056px;
-                }
+font-family: 'Inter';
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 24px; /* 150% */
+letter-spacing: 0.08px;
+            } h4{
+                color: #000;
+font-family: 'Inter';
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: 40px; /* 166.667% */
             }
         }
+     div{
+        display: flex;
+        flex-direction: column;
+        label{
+            color: #000;
+            font-family: 'Inter';
+            font-size: 22px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 36px; /* 163.636% */
+        }
+        input{
+            width: 521px;
+            height: 70px;
+            flex-shrink: 0;
+            border-radius: 10px;
+            border: none;
+            outline: none;
+            padding-left: 12px;
+            background: #FFF; ::placeholder{
+                color: rgba(0, 0, 0, 0.26);
+font-family: 'Inter';
+font-size: 14px;
+font-style: normal;
+font-weight: 500;
+line-height: 16px; /* 114.286% */
+letter-spacing: 0.056px;
+
+            }           
+        }
+     }
     }
+
+   
 
     #date-cont {
         display: grid;
@@ -1303,7 +1341,7 @@ button:active {
         font-style: normal;
         font-weight: 600;
         line-height: 44px;
-        margin: 50px 20px;
+        margin: 40px 20px;
     }
 }
 
